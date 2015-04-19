@@ -1,0 +1,69 @@
+/* default css */
+
+
+
+
+/* header */
+
+#main {
+	background-color: #F2C249;
+	margin-top: 4px;
+	margin-left: 4px;
+	margin-bottom: 4px;
+	width: 20%;
+	border-radius: 25px;
+	font-size: 16px;
+	padding: 15px;
+}
+
+/* navigator */
+
+nav {
+	margin-top: 0px;
+	background-color: #F2C249;
+	position: relative;
+	border-radius: 25px;
+
+}
+
+nav a {
+	margin-left: 6em;
+}
+
+#mainpic {
+	border-radius: 25px;
+	width: 12em;
+	height: 15em;
+	float: right;
+	margin: 10 5 10 5 ;
+	padding: 10px;
+	box-shadow: 10px 10px 2px #D4BF26;
+
+}
+
+body {
+	margin: 0px;
+	background-color: #3D4C53;
+	font-family: Book Antiqua;
+}
+
+#mainFooter {
+	border-radius: 25px;
+	background-color: #F2C249;
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	height: 50px;
+	margin: 4px 4px 4px 4px;
+}
+
+.socialclass {
+	display: inline-block;
+	position: absolute;
+	margin-left: 6em;
+}
+
+div .socialclass {
+display: inline-block;
+margin: 3px 3px 3px 3px ;
+}
