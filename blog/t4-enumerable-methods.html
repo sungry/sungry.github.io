@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TECHy BLOG</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+      <header>
+        <div id = "main">
+        <h1> TECHy BLOG </h1>
+        </div>
+      </header>
+      <nav>
+        <a class="nav_option" href="./index.html">HOME</a>
+        <a class="nav_option" href="./intro.html">ABOUT ME</a>
+        <a class="nav_option" href="#">TECH</a>
+        <a class="nav_option" href="#">DAYDREAMS</a>
+        <a class="nav_option" href="#">CONTACT</a>
+      </nav>
+      <div id="container">
+      <div id="bmp">
+      <p>
+        <h2>Enumerable#map</h2>
+          The map method is mighty useful!
+          If you're familiar with the collect method, map and collect are interexchaneable. (Sweet, huh?)
+          Map method takes a block, and it returns an array. More specifically, the method returns a new array with the result of running block once every element in enum (according to the mighty Ruby Doc).
+          For example, I'd like to take the advantage of one of the challenges I had to do this week for Dev Bootcamp.
+          In this challenge, map worked beautifully with what I had to do.
+
+          Here is an method I wrote:
+            def separate_comma(int)
+              int.to_s.split("").reverse.each_slice(3).map { |threesome| threesome.join }.join(",").reverse
+            end
+
+          Basically what this method does is that the method takes an integer as its input and returns a comma-separated integer as a string. Let's say we have an integer 10000000 passed in and we want to see "10,000,000" returned!
+
+          First, int.to_s turns the integer into a string. ("100000000")
+          Second, #split("") method turns the string into an array which contains this (["1","0","0","0","0","0","0","0"])
+          Third, now we reverse that array. (["0","0","0","0","0","0","0","1"]) Why? because it's easier to iterate through an array from left to right then right to left!
+          Fourth, each_slice(3) will put the elements of an array in a group of 3 [["0","0","0"], ["0","0","0"], ["0","1"]]
+          <emp>Fifth and NOW</emp>, the map method goes through each element of the array and join them into one string [["000"], ["000"], "01"]]
+          Sixth, now with that beautiful array we have, we simply turn the array into a string joined by a comma between each element.
+          "000,000,01"
+          Last, we reverse that and return it :)
+          "10,000,000"
+
+          So that was a little bit tedious, but hopefully an effective way to explain what the method does.
+          The main difference between map and each method is that map method returns an array but each actually just iterates through a collection but just returns the enumerable. That's what makes the map method very handy. Since it returns a new array with the new result, I didn't have to make another variable to be returned.
+
+          -Sung
+      </p>
+      </div>
+
+      <div id="box-model">
+        <img src="../img/box-model.png">
+      </div>
+      </div>
+
+    <footer>
+      <div id= "mainFooter">
+        <a class="social_option" href="https://www.facebook.com/noblimente" target="_blank"><img src ="../fb.png" alt="Facebook"></a>
+        <a class="social_option" href="https://twitter.com/alwaysungry" target="_blank"><img src ="../twitter.png" alt="Twitter"></a>
+    </footer>
+
+
+</body>
+
+</html>
