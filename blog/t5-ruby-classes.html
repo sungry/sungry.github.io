@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TECHy BLOG</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+      <header>
+        <div id = "main">
+        <h1> TECHy BLOG </h1>
+        </div>
+      </header>
+
+      <nav>
+        <a class="nav_option" href="./index.html">HOME</a>
+        <a class="nav_option" href="./intro.html">ABOUT ME</a>
+        <a class="nav_option" href="#">TECH</a>
+        <a class="nav_option" href="#">DAYDREAMS</a>
+        <a class="nav_option" href="#">CONTACT</a>
+      </nav>
+      <div id="container">
+      <div id="bmp">
+        <p>
+          <h1>CLASS?</h1>
+          Oh, we all want to have class. Who doesn't like to be classy?
+          Wait, that's not the class we're talking about here.
+
+          Ruby has class just like other programing languages. It does things that we can relate to real objects like furniture, cars.. anything that has relationship with other object(s).
+
+          Let's talk about a dog here:
+          A dog could do or be many things. What if we put them all together in one big class?
+
+          class Dog
+            def initialize(name, breed)
+              @name = name
+              @breed = breed
+            end
+
+            def bark
+              puts "#{@name} goes Woof! Woof!"
+            end
+
+          end
+
+          Here's how you define a class.
+
+          class Dog : This is how you define a class.
+          Now we have a class named dog. You want to capitalize the first letter as a Ruby tradition.
+
+          Maybe we can make our puppy bark
+
+          def bark
+            puts "Woof! Woof!"
+          end
+
+          end <= this is for the class.
+
+          What are we missing here? Perhaps we could give the dog a name and a breed?
+
+          Then we want to pass those two arguments.
+
+          but instead of do it directy to the class itself, we could 'initialize' an initialize method.
+          When
+
+          dog = Dog.new('Sonny', 'Labrador') is called, those two arguments are placed in 'initialize' method, then they by using instance variables (variables that have '@' sign).
+          Instance variables work within the scope of the class it's been declared in.
+
+          What if you want the dog to bark?
+
+          dog.bark will simply print out "Sonny goes Woof! Woof!"
+
+          ---
+          This was a rather simple example of it, but you can imagine class can do so many things just like real life objects.
+
+        </p>
+      </div>
+
+      </div>
+
+    <footer>
+      <div id= "mainFooter">
+        <a class="social_option" href="https://www.facebook.com/noblimente" target="_blank"><img src ="../fb.png" alt="Facebook"></a>
+        <a class="social_option" href="https://twitter.com/alwaysungry" target="_blank"><img src ="../twitter.png" alt="Twitter"></a>
+    </footer>
+
+
+</body>
