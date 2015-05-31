@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby Cheat Sheet</title>
+  <meta charset="UTF-8">
+  <link type="text/stylesheet" rel="stylesheet" href="cheat-sheet.css">
+</head>
+<header>
+<h1>RUBY CHEAT SHEET</h1>
+</header>
+<body>
+  <table>
+    <tr id ="headLine">
+      <td>Type</td>
+      <td>Name</td>
+      <td>Description</td>
+      <td>Syntax</td>
+      <td>Result</td>
+    </tr>
+    <tr>
+      <td>Hash</td>
+      <td>New Hash Rocket</td>
+      <td>Create a new hash</td>
+      <td>
+        <pre>
+          <code>
+          menu = {
+            "eggs" => 10,
+            "hashbrowns" => 5,
+            "bacon" => 6
+          }
+          </code>
+        </pre>
+      </td>
+      <td>
+        New hash created
+      </td>
+    </tr>
+    <tr>
+      <td>Hash</td>
+      <td>New Hash Symbol</td>
+      <td>Create a new hash</td>
+      <td>
+        <pre>
+          <code>
+          menu = {
+            "eggs": 10,
+            "hashbrowns": 5,
+            "bacon": 6
+          }
+          </code>
+        </pre>
+      </td>
+      <td>
+        New hash created
+      </td>
+    </tr>
+    <tr>
+    <td>Hash</td>
+      <td>Accessing a hash</td>
+      <td>Accessing the price of eggs</td>
+      <td>
+        <pre>
+          <code>
+          menu[:eggs]
+          </code>
+        </pre>
+      </td>
+      <td>
+        10
+      </td>
+    </tr>
+    <tr>
+      <td>Hash</td>
+      <td>Deleting a key-value pair</td>
+      <td>Removing eggs from the menu</td>
+      <td>
+        <pre>
+          <code>
+          menu.delete(:eggs)
+          </code>
+        </pre>
+      </td>
+      <td>
+        10
+        <pre>
+          <code>
+          menu = {
+            hashbrowns: 5,
+            bacon: 6
+          }
+          </code>
+        </pre>
+      </td>
+    </tr>
+    <tr>
+    <td>Hash</td>
+      <td>Each</td>
+      <td>Accessing every element in a hash</td>
+      <td>
+        <pre>
+          <code>
+          menu.each {|key,value|
+          puts "#{key} is worth #{value} dollars"}
+          </code>
+        </pre>
+      </td>
+      <td>
+        hashbrowns is worth 5 dollars
+        bacon is worth 6 dollars
+      </td>
+    </tr>
+     <tr>
+    <td>Hash</td>
+      <td>Include</td>
+      <td>Seeing if a key is included in a hash</td>
+      <td>
+        <pre>
+          <code>
+          menu.include?(:bacon)
+          </code>
+        </pre>
+      </td>
+      <td>
+        true
+      </td>
+    </tr>
+    <tr>
+    <td>Hash</td>
+      <td>Invert</td>
+      <td>It creates a new hash with keys and values inverted</td>
+      <td>
+        <pre>
+          <code>
+          menu.invert
+          </code>
+        </pre>
+      </td>
+      <td>
+        {
+        5 => :hashbrowns,
+        6 => :bacon
+         }
+      </td>
+    </tr>
+    <tr>
+    <td>Hash</td>
+      <td>Length</td>
+      <td>Returns a number of key-values inside of a hash</td>
+      <td>
+        <pre>
+          <code>
+          menu.length
+          </code>
+        </pre>
+      </td>
+      <td>
+        2
+      </td>
+    </tr>
+    <tr>
+    <td>Hash</td>
+      <td>Select</td>
+      <td>Returns a new hash with key-value pairs that are true for a given condition</td>
+      <td>
+        <pre>
+          <code>
+          menu.select{|k,v| k > :hashbrowns}
+          </code>
+        </pre>
+      </td>
+      <td>
+        {
+        bacon => 6
+        }
+      </td>
+    </tr>
+    <tr>
+    <td>Hash</td>
+      <td>Shift</td>
+      <td>Removes the first key-value pair and returns the pair</td>
+      <td>
+        <pre>
+          <code>
+          menu.shift
+          </code>
+        </pre>
+      </td>
+      <td>
+        [:hashbrowns, 5]
+      </td>
+    </tr>
+    <tr>
+    <td>Hash</td>
+      <td>Clear</td>
+      <td>Removes all key-value pairs in a hash</td>
+      <td>
+        <pre>
+          <code>
+          menu.clear
+          </code>
+        </pre>
+      </td>
+      <td>
+       {}
+      </td>
+    </tr>
+    <tr>
+    <td>Array</td>
+      <td>Creating a new array</td>
+      <td>Creating a new array</td>
+      <td>
+        <pre>
+          <code>
+          fruits = ["mango", "peach", "strawberry"]
+          fruits = %w(mango peach strawberry)
+          </code>
+        </pre>
+      </td>
+      <td>
+       ["mango", "peach", "strawberry"]
+      </td>
+    </tr>
+    <tr>
+    <td>Array</td>
+      <td>Length</td>
+      <td>Returns the length of an array</td>
+      <td>
+        <pre>
+          <code>
+          fruits.length
+          </code>
+        </pre>
+      </td>
+      <td>
+       3
+      </td>
+    </tr>
+    <tr>
+    <td>Array</td>
+      <td>Push</td>
+      <td>Adds an element to the end of an array</td>
+      <td>
+        <pre>
+          <code>
+          fruits.push("orange")
+          fruits << "orange"
+          </code>
+        </pre>
+      </td>
+      <td>
+       ["mango", "peach", "strawberry", "orange"]
+      </td>
+    </tr>
+        <tr>
+    <td>Array</td>
+      <td>Unshift</td>
+      <td>Adds an element to the beginning of an array</td>
+      <td>
+        <pre>
+          <code>
+          fruits.unshift("kiwi")
+          </code>
+        </pre>
+      </td>
+      <td>
+       ["kiwi", "mango", "peach", "strawberry", "orange"]
+      </td>
+    </tr>
+    <tr>
+    <td>Array</td>
+      <td>Pop</td>
+      <td>Removes and returns the last element of an array</td>
+      <td>
+        <pre>
+          <code>
+          fruits.pop
+          </code>
+        </pre>
+      </td>
+      <td>
+       "orange"
+       fruits = ["kiwi", "mango", "peach", "strawberry"]
+      </td>
+    </tr>
+    <tr>
+    <td>Array</td>
+      <td>Shift</td>
+      <td>Removes the first element of the array</td>
+      <td>
+        <pre>
+          <code>
+          fruits.shift
+          </code>
+        </pre>
+      </td>
+      <td>
+       "kiwi"
+       fruits = ["mango", "peach", "strawberry"]
+      </td>
+    </tr>
+      <tr>
+    <td>Array</td>
+      <td>Map</td>
+      <td>Iterates over each element of the array and returns a new array</td>
+      <td>
+        <pre>
+          <code>
+         new_fruits = fruits.map{|fruit| p"I ate a #{fruit}"}
+          </code>
+        </pre>
+      </td>
+      <td>
+       new_fruits = ["I ate a mango", "I ate a peach", "I ate a strawberry"]
+      </td>
+    </tr>
+          <tr>
+    <td>Array</td>
+      <td>Concat</td>
+      <td>Concatenates two arrays into one.</td>
+      <td>
+        <pre>
+          <code>
+         little_numbers = [1,2,3]
+         big_numbers = [99,100,101]
+         little_numbers.concat(big_numbers)
+          </code>
+        </pre>
+      </td>
+      <td>
+       little_numbers = [1, 2, 3, 99, 100, 101]
+      </td>
+    </tr>
+    <tr>
+    <td>Array</td>
+      <td>Insert</td>
+      <td>Inserts a given value in a given index</td>
+      <td>
+        <pre>
+          <code>
+         little_numbers.insert(3, 300)
+          </code>
+        </pre>
+      </td>
+      <td>
+       [1, 2, 3, 300, 99, 100, 101]
+      </td>
+    </tr>
+    <tr>
+    <td>Array</td>
+      <td>Delete</td>
+      <td>Deletes a value in a given index</td>
+      <td>
+        <pre>
+          <code>
+         little_numbers.delete(300)
+          </code>
+        </pre>
+      </td>
+      <td>
+       300
+       little_numbers - [1, 2, 3, 99, 100, 101]
+      </td>
+    </tr>
+      <td>Array</td>
+      <td>Clear</td>
+      <td>Clears an array and returns an empty array</td>
+      <td>
+        <pre>
+          <code>
+         little_numbers.clear
+          </code>
+        </pre>
+      </td>
+      <td>
+       []
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
