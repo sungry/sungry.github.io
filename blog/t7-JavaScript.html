@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TECHy BLOG</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+      <header>
+        <div id = "main">
+        <h1> TECHy BLOG </h1>
+        </div>
+      </header>
+      <nav>
+        <a class="nav_option" href="./index.html">HOME</a>
+        <a class="nav_option" href="./intro.html">ABOUT ME</a>
+        <a class="nav_option" href="#">TECH</a>
+        <a class="nav_option" href="#">DAYDREAMS</a>
+        <a class="nav_option" href="#">CONTACT</a>
+      </nav>
+      <div id="container">
+      <div id="bmp">
+      <p>
+        <h2>Ruby vs. Javascript</h2>
+     Ruby Hashes vs. JavaScript Objects
+    - Ruby classes vs. JavaScript constructor functions
+    - Ruby documentation vs. JavaScript documentation
+    - Looping in Ruby vs. Looping in JavaScript
+
+      I've learned about Ruby for about 4 weeks now and also just started to taste on Javascript. The both languages are very powerful and used widespreadly. Since I am learning the two languages simultaneously, I thought it'd be a good idea to compare those two to clear things out!
+
+      The topic I've chosen to talk about here is loops.
+
+      Even though both languages' loop syntaxes essentially do the same thing, they could look quite different.
+
+      <h2>JavaScript</h2>
+      Essentially, Javascript follows the traditional loop syntax.
+      For for loops, this is what it looks like.
+      <pre>
+        <code>
+      for (var i = 1; i <= 5; i++) {
+        console.log("loop  " + i);
+      }
+        <code>
+      <pre>
+      First, var i is a temporary variable one uses for the loop because every for loop needs a starting point. In this code, we are starting at a value of 1. i <= 5 sets a limit, otherwise the loop will go on infinitely. Here it says, if i is less than or equal to 5, stop. i++ means i = i + 1. meaning, each time loop goes through, i increments itself. For example, in the first loop i is 1, then next loop i becomes 2 and so forth.
+
+      During each loop, it prints out currently value of i.
+
+      <h2>Ruby</h2>
+      Although Ruby does work with the same way Javascipt does looping. It has its own neat and convenient loop syntax.
+
+      Let's say there's an array and it has 5 integer elements and we want to print that out each time.
+
+      <pre>
+        <code>
+      array = [1,2,3,4,5]
+
+      array.each { |current_value| puts current_value }
+        </code>
+      </pre>
+
+      I know, it look scompletely different! For Javascript we would've used array.length instead of i <= 5 for the limit.
+      Anyways, what the each method does is that it literally iterates through 'each' element of the loop. Each time this it iterates an element in the array, it prints out its element.
+
+      </p>
+      </div>
+
+      <div id="box-model">
+        <img src="../img/box-model.png">
+      </div>
+      </div>
+
+    <footer>
+      <div id= "mainFooter">
+        <a class="social_option" href="https://www.facebook.com/noblimente" target="_blank"><img src ="../fb.png" alt="Facebook"></a>
+        <a class="social_option" href="https://twitter.com/alwaysungry" target="_blank"><img src ="../twitter.png" alt="Twitter"></a>
+    </footer>
+
+
+</body>
+
+</html>

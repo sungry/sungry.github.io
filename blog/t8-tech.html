@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TECHy BLOG</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+      <header>
+        <div id = "main">
+        <h1> TECHy BLOG </h1>
+        </div>
+      </header>
+      <nav>
+        <a class="nav_option" href="./index.html">HOME</a>
+        <a class="nav_option" href="./intro.html">ABOUT ME</a>
+        <a class="nav_option" href="#">TECH</a>
+        <a class="nav_option" href="#">DAYDREAMS</a>
+        <a class="nav_option" href="#">CONTACT</a>
+      </nav>
+      <div id="container">
+      <div id="bmp">
+      <p>
+        <h2>Recursion</h2>
+      A recursive function/method calls itself. In order for a recursive function/method to terminate, one needs a base case. A base case means that when the recursion meets the 'case', it won't call itself recursively.
+      One thing to note is to that each recursion needs to get closer to the base case.
+      <pre>
+        <code>
+          def fib(n)
+            return n if (0..1).include? n
+            fib(n-1) + fib(n-2) if n > 1
+          end
+        </code>
+      </pre>
+      Here in this fibonacci example, each time the method runs, the value of n decrements until the value of n becomes less than 1.
+
+      </p>
+      </div>
+      </div>
+
+    <footer>
+      <div id= "mainFooter">
+        <a class="social_option" href="https://www.facebook.com/noblimente" target="_blank"><img src ="../fb.png" alt="Facebook"></a>
+        <a class="social_option" href="https://twitter.com/alwaysungry" target="_blank"><img src ="../twitter.png" alt="Twitter"></a>
+    </footer>
+
+
+</body>
+
+</html>
